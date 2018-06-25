@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+<web-app >
+
+    <description>
+      Servlet and JSP Examples.
+    </description>
+    <display-name>Servlet and JSP Examples</display-name>
+
+
+
+    <!-- JSPC servlet mapping start -->
+
+    <servlet>
+    	<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+      <servlet-name>hello</servlet-name>
+      <!--Ö¸Ã÷servletµÄÂ·¾¶£¬£¨°üÃû+ÀàÃû£©-->
+      <servlet-class>com.tsinghua.Hello</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    		<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+        <servlet-name>hello</servlet-name>
+        <!--ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃservletµÄurl-->
+        <url-pattern>/sp</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    	<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+      <servlet-name>helloGen</servlet-name>
+      <!--Ö¸Ã÷servletµÄÂ·¾¶£¬£¨°üÃû+ÀàÃû£©-->
+      <servlet-class>com.tsinghua.HelloGen</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    		<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+        <servlet-name>helloGen</servlet-name>
+        <!--ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃservletµÄurl-->
+        <url-pattern>/helloGen</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    	<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+      <servlet-name>helloHttp</servlet-name>
+      <!--Ö¸Ã÷servletµÄÂ·¾¶£¬£¨°üÃû+ÀàÃû£©-->
+      <servlet-class>com.tsinghua.HelloHttp</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    		<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+        <servlet-name>helloHttp</servlet-name>
+        <!--ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃservletµÄurl-->
+        <url-pattern>/helloHttp</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+      <servlet-name>login</servlet-name>
+      <!--Ö¸Ã÷servletµÄÂ·¾¶£¬£¨°üÃû+ÀàÃû£©-->
+      <servlet-class>com.tsinghua.Login</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    		<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+        <servlet-name>login</servlet-name>
+        <!--ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃservletµÄurl-->
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    	<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+      <servlet-name>logincl</servlet-name>
+      <!--Ö¸Ã÷servletµÄÂ·¾¶£¬£¨°üÃû+ÀàÃû£©-->
+      <servlet-class>com.tsinghua.LoginCl</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    		<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+        <servlet-name>logincl</servlet-name>
+        <!--ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃservletµÄurl-->
+        <url-pattern>/logincl</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    	<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+      <servlet-name>wel</servlet-name>
+      <!--Ö¸Ã÷servletµÄÂ·¾¶£¬£¨°üÃû+ÀàÃû£©-->
+      <servlet-class>com.tsinghua.Wel</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    		<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+        <servlet-name>wel</servlet-name>
+        <!--ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃservletµÄurl-->
+        <url-pattern>/wel</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    	<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+      <servlet-name>cookietest1</servlet-name>
+      <!--Ö¸Ã÷servletµÄÂ·¾¶£¬£¨°üÃû+ÀàÃû£©-->
+      <servlet-class>com.tsinghua.CookieTest1</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    		<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+        <servlet-name>cookietest1</servlet-name>
+        <!--ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃservletµÄurl-->
+        <url-pattern>/cookietest1</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+      <servlet-name>cookietest2</servlet-name>
+      <!--Ö¸Ã÷servletµÄÂ·¾¶£¬£¨°üÃû+ÀàÃû£©-->
+      <servlet-class>com.tsinghua.CookieTest2</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    		<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+        <servlet-name>cookietest2</servlet-name>
+        <!--ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃservletµÄurl-->
+        <url-pattern>/cookietest2</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+      <servlet-name>cookietest3</servlet-name>
+      <!--Ö¸Ã÷servletµÄÂ·¾¶£¬£¨°üÃû+ÀàÃû£©-->
+      <servlet-class>com.tsinghua.CookieTest3</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    		<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+        <servlet-name>cookietest3</servlet-name>
+        <!--ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃservletµÄurl-->
+        <url-pattern>/cookietest3</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+      <servlet-name>servletcontexttest1</servlet-name>
+      <!--Ö¸Ã÷servletµÄÂ·¾¶£¬£¨°üÃû+ÀàÃû£©-->
+      <servlet-class>com.tsinghua.ServletContextTest1</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    		<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+        <servlet-name>servletcontexttest1</servlet-name>
+        <!--ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃservletµÄurl-->
+        <url-pattern>/servletcontexttest1</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    	<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+      <servlet-name>servletcontexttest2</servlet-name>
+      <!--Ö¸Ã÷servletµÄÂ·¾¶£¬£¨°üÃû+ÀàÃû£©-->
+      <servlet-class>com.tsinghua.ServletContextTest2</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    		<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+        <servlet-name>servletcontexttest2</servlet-name>
+        <!--ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃservletµÄurl-->
+        <url-pattern>/servletcontexttest2</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    	<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+      <servlet-name>servletfiletest1</servlet-name>
+      <!--Ö¸Ã÷servletµÄÂ·¾¶£¬£¨°üÃû+ÀàÃû£©-->
+      <servlet-class>com.tsinghua.ServletFileTest1</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    		<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+        <servlet-name>servletfiletest1</servlet-name>
+        <!--ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃservletµÄurl-->
+        <url-pattern>/servletfiletest1</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+      <servlet-name>servletfiletest2</servlet-name>
+      <!--Ö¸Ã÷servletµÄÂ·¾¶£¬£¨°üÃû+ÀàÃû£©-->
+      <servlet-class>com.tsinghua.ServletFileTest2</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    		<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+        <servlet-name>servletfiletest2</servlet-name>
+        <!--ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃservletµÄurl-->
+        <url-pattern>/servletfiletest2</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+      <servlet-name>main</servlet-name>
+      <!--Ö¸Ã÷servletµÄÂ·¾¶£¬£¨°üÃû+ÀàÃû£©-->
+      <servlet-class>com.tsinghua.Main</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    		<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+        <servlet-name>main</servlet-name>
+        <!--ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃservletµÄurl-->
+        <url-pattern>/main</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+      <servlet-name>ok</servlet-name>
+      <!--Ö¸Ã÷servletµÄÂ·¾¶£¬£¨°üÃû+ÀàÃû£©-->
+      <servlet-class>com.tsinghua.Ok</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    		<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+        <servlet-name>ok</servlet-name>
+        <!--ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃservletµÄurl-->
+        <url-pattern>/ok</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+      <servlet-name>err</servlet-name>
+      <!--Ö¸Ã÷servletµÄÂ·¾¶£¬£¨°üÃû+ÀàÃû£©-->
+      <servlet-class>com.tsinghua.Err</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    		<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+        <servlet-name>err</servlet-name>
+        <!--ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃservletµÄurl-->
+        <url-pattern>/err</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+      <servlet-name>delusercl</servlet-name>
+      <!--Ö¸Ã÷servletµÄÂ·¾¶£¬£¨°üÃû+ÀàÃû£©-->
+      <servlet-class>com.tsinghua.DelUserCl</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    		<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+        <servlet-name>delusercl</servlet-name>
+        <!--ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃservletµÄurl-->
+        <url-pattern>/delusercl</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    	<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+      <servlet-name>update</servlet-name>
+      <!--Ö¸Ã÷servletµÄÂ·¾¶£¬£¨°üÃû+ÀàÃû£©-->
+      <servlet-class>com.tsinghua.Update</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    		<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+        <servlet-name>update</servlet-name>
+        <!--ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃservletµÄurl-->
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+      <servlet-name>updatecl</servlet-name>
+      <!--Ö¸Ã÷servletµÄÂ·¾¶£¬£¨°üÃû+ÀàÃû£©-->
+      <servlet-class>com.tsinghua.UpdateCl</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    		<!--¸øÄãµÄservlrtÈ¡Ãû£¬ÈÎÒâµÄ-->
+        <servlet-name>updatecl</servlet-name>
+        <!--ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃservletµÄurl-->
+        <url-pattern>/updatecl</url-pattern>
+    </servlet-mapping>
+    
+    
+   <!--JSPC servlet mappings end -->
+
+</web-app>

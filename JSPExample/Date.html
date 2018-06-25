@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>异步请求实例</title>
+<script type="text/javascript">
+var xmlHttp;
+function createXMLHttpRequest(){
+   if(window.ActiveXObject) {
+     xmlHttp= new ActiveXObject("Microsoft.XMLHTTP");//创建XMLHttpRequet对象
+   }
+  else if (window.XMLHttpRequest) {
+     xmlHttp=new XMLHttpRequest();//创建XMLHttpRequet对象
+     }
+ }
+function startRequest() {
+ createXMLHttpRequest();
+ xmlHttp.onreadystatechange=handleStateChange;
+ xmlHttp.open("GET", "Da.jsp", true);
+ xmlHttp.send(null);
+ }
+function handleStateChange() {
+  if(xmlHttp.readyState==4) {
+ if(xmlHttp.status==200) {
+  document.getElementById("res").innerHTML = xmlHttp.responseText;
+     }
+  }
+}
+</script>
+</head>
+<body>
+<img src=baner.jpg width=100%>
+  <form action="#">
+  <input type="button" value="获取当前时间"  onclick="startRequest(); "/>
+</form>
+<div id="res"></div>
+<table width="100%"  cellspacing="0" cellpadding="4" align="center" bordercolor="#A6CAF0" border=1>
+              <tr> 
+                  <td> <div align="center"> 
+                    <p>IT在中国电脑学习网！@2007<br>
+                    公司地址:郑州市二七路200号金博大D座2708室                    <br />
+                    电话:66202195
+                      电子邮件:<A HREF='mailto:liuhaisong9462@sohu.com'></A> itzcn@126.com </p>
+                  </div></td>
+              </tr>
+</table>
+</body>
+</html>
