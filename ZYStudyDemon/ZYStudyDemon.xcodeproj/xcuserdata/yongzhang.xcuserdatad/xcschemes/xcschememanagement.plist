@@ -9,6 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ZYStudyDemon.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1F44D2EC20E47AA4007EB825</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1F44D30720E47AA9007EB825</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1F44D31220E47AA9007EB825</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

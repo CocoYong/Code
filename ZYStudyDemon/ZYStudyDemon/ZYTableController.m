@@ -21,9 +21,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-	titleArray = @[@"FaceIDcontroller",@"SystemShare"];
-	controllerNameArray = @[@"FaceViewController",@"SystemShareController"];
+	titleArray = @[@"WebViewController",@"FaceIDcontroller",@"SystemShare"];
+	controllerNameArray = @[@"WebViewController",@"FaceViewController",@"SystemShareController"];
 	self.tableView.tableFooterView = [UIView new];
+	self.tableView.rowHeight = 100;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,14 +41,11 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return titleArray.count;
 }
-
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"roottablecell" forIndexPath:indexPath];
 	cell.textLabel.text = titleArray[indexPath.row];
     return cell;
 }
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
 	
 	UIViewController *controller = [[NSClassFromString(controllerNameArray[indexPath.row]) alloc]init];

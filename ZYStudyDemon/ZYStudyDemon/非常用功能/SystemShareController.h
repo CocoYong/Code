@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface SystemShareController : UIViewController
+@interface SystemShareController : BaseViewController
 
 @end

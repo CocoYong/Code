@@ -6,7 +6,7 @@
 //  Copyright © 2018年 yong zhang. All rights reserved.
 //
 
-
+//面容识别，指纹识别认证
 //NSFaceIDUsageDescription  在info.plist 中添加此项
 
 #import "FaceViewController.h"
