@@ -97,7 +97,7 @@ static ZYLocationManager *manager = nil;
 			
 		}else if (status == kCLAuthorizationStatusDenied)
 		{
-			UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"定位被禁用" message:@"去设置中允许阳光车生活访问你的位置信息" preferredStyle:(UIAlertControllerStyleAlert)];
+			UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"定位被禁用" message:@"去设置允许访问你的位置信息" preferredStyle:(UIAlertControllerStyleAlert)];
 			[alertController addAction:[UIAlertAction actionWithTitle:@"不去" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
 				[alertController dismissViewControllerAnimated:YES completion:nil];
 				openLocation = NO;
