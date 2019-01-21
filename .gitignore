@@ -1,2 +1,6 @@
 *.xcbkptlist
 *.xcuserstate
+/ZYStudyDemon/Pods/Pods.xcodeproj/xcuserdata/yong.xcuserdatad/xcschemes/xcschememanagement.plist
+/ZYStudyDemon/.DS_Store
+/.DS_Store
+/ZYStudyDemon/ZYStudyDemon.xcodeproj/xcuserdata/yong.xcuserdatad/xcschemes/xcschememanagement.plist
