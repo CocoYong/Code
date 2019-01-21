@@ -9,14 +9,14 @@
 //面容识别，指纹识别认证
 //NSFaceIDUsageDescription  在info.plist 中添加此项
 
-#import "FaceViewController.h"
+#import "ZYFaceViewController.h"
 #import <LocalAuthentication/LocalAuthentication.h>
 
-@interface FaceViewController ()
+@interface ZYFaceViewController ()
 
 @end
 
-@implementation FaceViewController
+@implementation ZYFaceViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

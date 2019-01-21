@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F21233520E4D91E003CD11D /* SystemShareController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F21233320E4D91E003CD11D /* SystemShareController.m */; };
-		1F21233620E4D91E003CD11D /* SystemShareController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F21233420E4D91E003CD11D /* SystemShareController.xib */; };
+		1F21233520E4D91E003CD11D /* ZYSystemShareController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F21233320E4D91E003CD11D /* ZYSystemShareController.m */; };
+		1F21233620E4D91E003CD11D /* ZYSystemShareController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F21233420E4D91E003CD11D /* ZYSystemShareController.xib */; };
 		1F44D2F220E47AA4007EB825 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F44D2F120E47AA4007EB825 /* AppDelegate.m */; };
 		1F44D2F820E47AA4007EB825 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F44D2F620E47AA4007EB825 /* Main.storyboard */; };
 		1F44D2FB20E47AA4007EB825 /* ZYStudyDemon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F44D2F920E47AA4007EB825 /* ZYStudyDemon.xcdatamodeld */; };
@@ -18,11 +18,11 @@
 		1F44D30D20E47AA9007EB825 /* ZYStudyDemonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F44D30C20E47AA9007EB825 /* ZYStudyDemonTests.m */; };
 		1F44D31820E47AA9007EB825 /* ZYStudyDemonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F44D31720E47AA9007EB825 /* ZYStudyDemonUITests.m */; };
 		1F44D32720E47B70007EB825 /* ZYTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F44D32620E47B70007EB825 /* ZYTableController.m */; };
-		1F44D32B20E48751007EB825 /* FaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F44D32920E48751007EB825 /* FaceViewController.m */; };
-		1F44D32C20E48751007EB825 /* FaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F44D32A20E48751007EB825 /* FaceViewController.xib */; };
-		1FA76DED21D5BA4A00515ECA /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA76DEB21D5BA4A00515ECA /* WebViewController.m */; };
-		1FA76DEE21D5BA4A00515ECA /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FA76DEC21D5BA4A00515ECA /* WebViewController.xib */; };
-		1FA76DF121D5C9BD00515ECA /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA76DF021D5C9BD00515ECA /* BaseViewController.m */; };
+		1F44D32B20E48751007EB825 /* ZYFaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F44D32920E48751007EB825 /* ZYFaceViewController.m */; };
+		1F44D32C20E48751007EB825 /* ZYFaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F44D32A20E48751007EB825 /* ZYFaceViewController.xib */; };
+		1FA76DED21D5BA4A00515ECA /* ZYWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA76DEB21D5BA4A00515ECA /* ZYWebViewController.m */; };
+		1FA76DEE21D5BA4A00515ECA /* ZYWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FA76DEC21D5BA4A00515ECA /* ZYWebViewController.xib */; };
+		1FA76DF121D5C9BD00515ECA /* ZYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA76DF021D5C9BD00515ECA /* ZYBaseViewController.m */; };
 		1FA76DF721D5F48600515ECA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA76DF621D5F48600515ECA /* CoreLocation.framework */; };
 		1FA76DFD21D5F74500515ECA /* ZYLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA76DFC21D5F74500515ECA /* ZYLocationManager.m */; };
 		1FA76E0121D6222100515ECA /* SettingLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 1FA76E0021D6222100515ECA /* SettingLocation.gpx */; };
@@ -52,9 +52,9 @@
 /* Begin PBXFileReference section */
 		0092C2FB629CD8C60400D7F4 /* Pods_ZYStudyDemon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYStudyDemon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00BBA3E8B00F739A530268CB /* Pods-ZYStudyDemonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYStudyDemonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYStudyDemonUITests/Pods-ZYStudyDemonUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		1F21233220E4D91E003CD11D /* SystemShareController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemShareController.h; sourceTree = "<group>"; };
-		1F21233320E4D91E003CD11D /* SystemShareController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemShareController.m; sourceTree = "<group>"; };
-		1F21233420E4D91E003CD11D /* SystemShareController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SystemShareController.xib; sourceTree = "<group>"; };
+		1F21233220E4D91E003CD11D /* ZYSystemShareController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYSystemShareController.h; sourceTree = "<group>"; };
+		1F21233320E4D91E003CD11D /* ZYSystemShareController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYSystemShareController.m; sourceTree = "<group>"; };
+		1F21233420E4D91E003CD11D /* ZYSystemShareController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZYSystemShareController.xib; sourceTree = "<group>"; };
 		1F44D2ED20E47AA4007EB825 /* ZYStudyDemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYStudyDemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F44D2F020E47AA4007EB825 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1F44D2F120E47AA4007EB825 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,14 +72,14 @@
 		1F44D31920E47AA9007EB825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F44D32520E47B70007EB825 /* ZYTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYTableController.h; sourceTree = "<group>"; };
 		1F44D32620E47B70007EB825 /* ZYTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYTableController.m; sourceTree = "<group>"; };
-		1F44D32820E48751007EB825 /* FaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceViewController.h; sourceTree = "<group>"; };
-		1F44D32920E48751007EB825 /* FaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceViewController.m; sourceTree = "<group>"; };
-		1F44D32A20E48751007EB825 /* FaceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FaceViewController.xib; sourceTree = "<group>"; };
-		1FA76DEA21D5BA4A00515ECA /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
-		1FA76DEB21D5BA4A00515ECA /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
-		1FA76DEC21D5BA4A00515ECA /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
-		1FA76DEF21D5C9BD00515ECA /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		1FA76DF021D5C9BD00515ECA /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		1F44D32820E48751007EB825 /* ZYFaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFaceViewController.h; sourceTree = "<group>"; };
+		1F44D32920E48751007EB825 /* ZYFaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFaceViewController.m; sourceTree = "<group>"; };
+		1F44D32A20E48751007EB825 /* ZYFaceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZYFaceViewController.xib; sourceTree = "<group>"; };
+		1FA76DEA21D5BA4A00515ECA /* ZYWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYWebViewController.h; sourceTree = "<group>"; };
+		1FA76DEB21D5BA4A00515ECA /* ZYWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYWebViewController.m; sourceTree = "<group>"; };
+		1FA76DEC21D5BA4A00515ECA /* ZYWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZYWebViewController.xib; sourceTree = "<group>"; };
+		1FA76DEF21D5C9BD00515ECA /* ZYBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYBaseViewController.h; sourceTree = "<group>"; };
+		1FA76DF021D5C9BD00515ECA /* ZYBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYBaseViewController.m; sourceTree = "<group>"; };
 		1FA76DF621D5F48600515ECA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1FA76DFB21D5F74500515ECA /* ZYLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYLocationManager.h; sourceTree = "<group>"; };
 		1FA76DFC21D5F74500515ECA /* ZYLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYLocationManager.m; sourceTree = "<group>"; };
@@ -167,8 +167,8 @@
 				1F44D2F120E47AA4007EB825 /* AppDelegate.m */,
 				1F44D32520E47B70007EB825 /* ZYTableController.h */,
 				1F44D32620E47B70007EB825 /* ZYTableController.m */,
-				1FA76DEF21D5C9BD00515ECA /* BaseViewController.h */,
-				1FA76DF021D5C9BD00515ECA /* BaseViewController.m */,
+				1FA76DEF21D5C9BD00515ECA /* ZYBaseViewController.h */,
+				1FA76DF021D5C9BD00515ECA /* ZYBaseViewController.m */,
 				1FA76DF221D5F3FC00515ECA /* 定位 */,
 				1FA76DE921D5BA0F00515ECA /* WebViewTest */,
 				1FA76DE821D5B55500515ECA /* 非常用功能 */,
@@ -203,12 +203,12 @@
 		1FA76DE821D5B55500515ECA /* 非常用功能 */ = {
 			isa = PBXGroup;
 			children = (
-				1F44D32820E48751007EB825 /* FaceViewController.h */,
-				1F44D32920E48751007EB825 /* FaceViewController.m */,
-				1F44D32A20E48751007EB825 /* FaceViewController.xib */,
-				1F21233220E4D91E003CD11D /* SystemShareController.h */,
-				1F21233320E4D91E003CD11D /* SystemShareController.m */,
-				1F21233420E4D91E003CD11D /* SystemShareController.xib */,
+				1F44D32820E48751007EB825 /* ZYFaceViewController.h */,
+				1F44D32920E48751007EB825 /* ZYFaceViewController.m */,
+				1F44D32A20E48751007EB825 /* ZYFaceViewController.xib */,
+				1F21233220E4D91E003CD11D /* ZYSystemShareController.h */,
+				1F21233320E4D91E003CD11D /* ZYSystemShareController.m */,
+				1F21233420E4D91E003CD11D /* ZYSystemShareController.xib */,
 				1FBEBDC620E9CF7F00EA9AC2 /* ZYActivity.h */,
 				1FBEBDC720E9CF7F00EA9AC2 /* ZYActivity.m */,
 			);
@@ -218,9 +218,9 @@
 		1FA76DE921D5BA0F00515ECA /* WebViewTest */ = {
 			isa = PBXGroup;
 			children = (
-				1FA76DEA21D5BA4A00515ECA /* WebViewController.h */,
-				1FA76DEB21D5BA4A00515ECA /* WebViewController.m */,
-				1FA76DEC21D5BA4A00515ECA /* WebViewController.xib */,
+				1FA76DEA21D5BA4A00515ECA /* ZYWebViewController.h */,
+				1FA76DEB21D5BA4A00515ECA /* ZYWebViewController.m */,
+				1FA76DEC21D5BA4A00515ECA /* ZYWebViewController.xib */,
 			);
 			path = WebViewTest;
 			sourceTree = "<group>";
@@ -311,6 +311,7 @@
 		1F44D2E520E47AA4007EB825 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZY;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "yong zhang";
 				TargetAttributes = {
@@ -361,10 +362,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F44D30020E47AA8007EB825 /* LaunchScreen.storyboard in Resources */,
-				1F44D32C20E48751007EB825 /* FaceViewController.xib in Resources */,
+				1F44D32C20E48751007EB825 /* ZYFaceViewController.xib in Resources */,
 				1F44D2FD20E47AA8007EB825 /* Assets.xcassets in Resources */,
-				1FA76DEE21D5BA4A00515ECA /* WebViewController.xib in Resources */,
-				1F21233620E4D91E003CD11D /* SystemShareController.xib in Resources */,
+				1FA76DEE21D5BA4A00515ECA /* ZYWebViewController.xib in Resources */,
+				1F21233620E4D91E003CD11D /* ZYSystemShareController.xib in Resources */,
 				1FA76E0121D6222100515ECA /* SettingLocation.gpx in Resources */,
 				1F44D2F820E47AA4007EB825 /* Main.storyboard in Resources */,
 			);
@@ -471,12 +472,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F44D2FB20E47AA4007EB825 /* ZYStudyDemon.xcdatamodeld in Sources */,
-				1FA76DF121D5C9BD00515ECA /* BaseViewController.m in Sources */,
+				1FA76DF121D5C9BD00515ECA /* ZYBaseViewController.m in Sources */,
 				1F44D32720E47B70007EB825 /* ZYTableController.m in Sources */,
-				1F44D32B20E48751007EB825 /* FaceViewController.m in Sources */,
-				1FA76DED21D5BA4A00515ECA /* WebViewController.m in Sources */,
+				1F44D32B20E48751007EB825 /* ZYFaceViewController.m in Sources */,
+				1FA76DED21D5BA4A00515ECA /* ZYWebViewController.m in Sources */,
 				1F44D30320E47AA9007EB825 /* main.m in Sources */,
-				1F21233520E4D91E003CD11D /* SystemShareController.m in Sources */,
+				1F21233520E4D91E003CD11D /* ZYSystemShareController.m in Sources */,
 				1F44D2F220E47AA4007EB825 /* AppDelegate.m in Sources */,
 				1FBEBDC820E9CF7F00EA9AC2 /* ZYActivity.m in Sources */,
 				1FA76DFD21D5F74500515ECA /* ZYLocationManager.m in Sources */,
@@ -650,7 +651,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3J62K7KKCA;
+				DEVELOPMENT_TEAM = LH28XA7T22;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				INFOPLIST_FILE = ZYStudyDemon/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -658,7 +659,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhang.ZYStudyDemon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suncar.ZYStudyDemon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
@@ -671,7 +672,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3J62K7KKCA;
+				DEVELOPMENT_TEAM = LH28XA7T22;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				INFOPLIST_FILE = ZYStudyDemon/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -679,7 +680,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhang.ZYStudyDemon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suncar.ZYStudyDemon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";

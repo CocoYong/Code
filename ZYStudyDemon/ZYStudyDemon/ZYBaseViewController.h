@@ -1,5 +1,5 @@
 //
-//  WebViewController.h
+//  BaseViewController.h
 //  ZYStudyDemon
 //
 //  Created by yong on 2018/12/28.
@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
+#import "Masonry.h"
+#import "AFNetworking.h"
+#import "SDImageCache.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WebViewController : BaseViewController
+@interface ZYBaseViewController : UIViewController
 
 @end
 

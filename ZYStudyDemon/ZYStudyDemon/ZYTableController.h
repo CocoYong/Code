@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ZYTableController : UITableViewController
+@property (nonatomic, copy) NSString *testString;
+@property (nonatomic, assign) NSInteger testInteger;
+@property (nonatomic, assign) CGFloat  testFloat;
+@property (nonatomic, assign) double  testDouble;
+@property (nonatomic, assign) BOOL testBool;
+@property(nonatomic, strong)  NSArray *testArray;
 
 @end

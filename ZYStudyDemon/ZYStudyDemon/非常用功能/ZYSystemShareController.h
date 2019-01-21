@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
+#import "ZYBaseViewController.h"
 
-@interface SystemShareController : BaseViewController
+@interface ZYSystemShareController : ZYBaseViewController
 
 @end

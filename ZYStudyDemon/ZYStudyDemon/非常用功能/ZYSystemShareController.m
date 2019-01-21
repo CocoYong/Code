@@ -6,14 +6,14 @@
 //  Copyright © 2018年 yong zhang. All rights reserved.
 //
 // 系统分享实现
-#import "SystemShareController.h"
+#import "ZYSystemShareController.h"
 #import <Social/Social.h>
 #import "ZYActivity.h"
-@interface SystemShareController ()
+@interface ZYSystemShareController ()
 
 @end
 
-@implementation SystemShareController
+@implementation ZYSystemShareController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

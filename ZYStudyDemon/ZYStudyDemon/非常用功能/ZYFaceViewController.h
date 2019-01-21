@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
+#import "ZYBaseViewController.h"
 
-@interface FaceViewController : BaseViewController
+@interface ZYFaceViewController : ZYBaseViewController
 
 @end

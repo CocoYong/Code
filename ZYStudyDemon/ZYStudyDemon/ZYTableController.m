@@ -21,8 +21,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-	titleArray = @[@"WebViewController",@"FaceIDcontroller",@"SystemShare"];
-	controllerNameArray = @[@"WebViewController",@"FaceViewController",@"SystemShareController"];
+    NSLog(@"\ntestString==%@\ntestInteger==%ld\ntestFloat==%f\ntestDouble==%f\ntestBool==%d\ntestArray==%@\n",self.testString,self.testInteger,self.testFloat,self.testDouble,self.testBool,self.testArray);
+    
+    
+    
+	titleArray = @[@"ZYWebViewController",@"ZYFaceIDcontroller",@"ZYSystemShare"];
+	controllerNameArray = @[@"ZYWebViewController",@"ZYFaceViewController",@"ZYSystemShareController"];
 	self.tableView.tableFooterView = [UIView new];
 	self.tableView.rowHeight = 100;
 }

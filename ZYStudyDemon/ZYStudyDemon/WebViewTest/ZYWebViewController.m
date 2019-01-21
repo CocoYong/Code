@@ -6,12 +6,12 @@
 //  Copyright © 2018 yong zhang. All rights reserved.
 //
 
-#import "WebViewController.h"
+#import "ZYWebViewController.h"
 #import <WebKit/WebKit.h>
 
 #import "ZYLocationManager.h"
 
-@interface WebViewController ()<UIWebViewDelegate,WKUIDelegate,WKNavigationDelegate>
+@interface ZYWebViewController ()<UIWebViewDelegate,WKUIDelegate,WKNavigationDelegate>
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
 @property (strong, nonatomic)  WKWebView *wkWebView;
 @property (strong, nonatomic)  WKWebViewConfiguration *confige;
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation WebViewController
+@implementation ZYWebViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

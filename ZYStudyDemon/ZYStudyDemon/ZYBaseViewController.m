@@ -6,13 +6,13 @@
 //  Copyright © 2018 yong zhang. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "ZYBaseViewController.h"
 
-@interface BaseViewController ()
+@interface ZYBaseViewController ()
 
 @end
 
-@implementation BaseViewController
+@implementation ZYBaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
