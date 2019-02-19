@@ -10,6 +10,8 @@
 #import <Social/Social.h>
 #import "ZYActivity.h"
 @interface ZYSystemShareController ()
+@property (strong, nonatomic) IBOutlet UIView *testViewOne;
+@property (strong, nonatomic) IBOutlet UIView *testViewTwo;
 
 @end
 
@@ -81,10 +83,34 @@
 	
 	//弹出分享控制器
 	[self presentViewController:composeVc animated:YES completion:nil];
-	
 
 }
 
+- (IBAction)shareThreeButtAction:(UIButton *)sender {
+    
+    
+   
+//    UIView *testView = [[UIView alloc]initWithFrame:self.navigationController.view.bounds];
+//    testView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.6];
+//
+//    UIView *popView = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+//    popView.backgroundColor = [UIColor redColor];
+//    [testView addSubview:popView];
+//
+//
+//    [self.navigationController.view addSubview:testView];
+//
+    
+    self.testViewOne.frame = CGRectMake(0, 0, 200, 200);
+    [[UIApplication sharedApplication].keyWindow addSubview:self.testViewOne];
+    
+    self.testViewTwo.frame = CGRectMake(100, 100, 300, 300);
+     [[UIApplication sharedApplication].keyWindow addSubview:self.testViewTwo];
+    
+    self.testViewOne.frame = CGRectMake(300, 300, 200, 200);
+    [[UIApplication sharedApplication].keyWindow addSubview:self.testViewOne];
+    
+}
 
 
 

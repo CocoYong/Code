@@ -18,9 +18,8 @@
 <!--         -->
 <!--        <time>2014-09-24T14:55:37Z</time>-->
 <!--    </wpt>-->
-	<wpt lat="38.061601" lon="114.571941">
-		<name>石家庄</name>
-		
+	<wpt lat="39.949812" lon="116.648894">
+		<name>阳光城</name>
 		<!--
 		 Optionally provide a time element for each waypoint. Xcode will interpolate movement
 		 at a rate of speed based on the time elapsed between each waypoint. If you do not provide
@@ -28,7 +27,7 @@
 		 
 		 Waypoints must be sorted by time in ascending order.
 		 -->
-		<time>2016-09-24T14:55:33Z</time>
+<!--        <time>2016-09-24T14:55:33Z</time>-->
 	</wpt>
     
 </gpx>

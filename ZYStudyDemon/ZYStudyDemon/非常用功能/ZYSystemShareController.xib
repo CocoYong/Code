@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZYSystemShareController">
             <connections>
+                <outlet property="testViewOne" destination="UCL-kJ-ZbG" id="65R-lq-PhK"/>
+                <outlet property="testViewTwo" destination="qMK-OS-HGN" id="ILQ-Gb-XsR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8h-gp-kbv">
-                    <rect key="frame" x="81" y="97.5" width="213" height="72"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="50"/>
                     <state key="normal" title="ShareOne"/>
                     <connections>
@@ -28,21 +30,51 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DiS-v8-DLM">
-                    <rect key="frame" x="85" y="249.5" width="205" height="72"/>
+                    <rect key="frame" x="0.0" y="222.5" width="375" height="222"/>
                     <fontDescription key="fontDescription" type="system" pointSize="50"/>
                     <state key="normal" title="ShareTwo"/>
                     <connections>
                         <action selector="shareTwoButtonAction:" destination="-1" eventType="touchUpInside" id="0Lf-Vk-m3U"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDG-dD-W9I">
+                    <rect key="frame" x="0.0" y="444.5" width="375" height="222.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                    <state key="normal" title="ShareThree"/>
+                    <connections>
+                        <action selector="shareThreeButtAction:" destination="-1" eventType="touchUpInside" id="p8o-gB-muO"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="P8h-gp-kbv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="F3J-2A-61s"/>
-                <constraint firstItem="P8h-gp-kbv" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-200" id="GX9-Hb-SA8"/>
-                <constraint firstItem="DiS-v8-DLM" firstAttribute="centerX" secondItem="P8h-gp-kbv" secondAttribute="centerX" id="fdE-gZ-7Ll"/>
-                <constraint firstItem="DiS-v8-DLM" firstAttribute="top" secondItem="P8h-gp-kbv" secondAttribute="bottom" constant="80" id="xNE-o1-O9E"/>
+                <constraint firstAttribute="trailing" secondItem="P8h-gp-kbv" secondAttribute="trailing" id="09i-Cb-d4j"/>
+                <constraint firstAttribute="bottom" secondItem="ZDG-dD-W9I" secondAttribute="bottom" id="2U4-eY-CmY"/>
+                <constraint firstItem="P8h-gp-kbv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Eby-vE-MrE"/>
+                <constraint firstItem="DiS-v8-DLM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IW8-oe-8zI"/>
+                <constraint firstItem="P8h-gp-kbv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IjF-3j-MwP"/>
+                <constraint firstItem="DiS-v8-DLM" firstAttribute="height" secondItem="P8h-gp-kbv" secondAttribute="height" id="MA4-gc-qvl"/>
+                <constraint firstAttribute="trailing" secondItem="DiS-v8-DLM" secondAttribute="trailing" id="Y5U-q3-uG3"/>
+                <constraint firstAttribute="trailing" secondItem="ZDG-dD-W9I" secondAttribute="trailing" id="aB1-bg-R04"/>
+                <constraint firstItem="ZDG-dD-W9I" firstAttribute="top" secondItem="DiS-v8-DLM" secondAttribute="bottom" id="bRh-F5-1nf"/>
+                <constraint firstItem="ZDG-dD-W9I" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dYk-h8-8Uo"/>
+                <constraint firstItem="DiS-v8-DLM" firstAttribute="top" secondItem="P8h-gp-kbv" secondAttribute="bottom" id="jcB-xt-huj"/>
+                <constraint firstItem="ZDG-dD-W9I" firstAttribute="height" secondItem="P8h-gp-kbv" secondAttribute="height" id="waR-ut-QRt"/>
             </constraints>
+        </view>
+        <view contentMode="scaleToFill" id="UCL-kJ-ZbG">
+            <rect key="frame" x="0.0" y="0.0" width="212" height="134"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="1" green="0.54117647059999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="57.600000000000001" y="619.79010494752629"/>
+        </view>
+        <view contentMode="scaleToFill" id="qMK-OS-HGN">
+            <rect key="frame" x="0.0" y="0.0" width="205" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="0.25071522887323944" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="52" y="812.29385307346331"/>
         </view>
     </objects>
 </document>

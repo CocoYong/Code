@@ -14,26 +14,32 @@
 
 @implementation ZYTableController
 {
-	NSArray *titleArray;
-	NSArray *controllerNameArray;
+    NSArray *titleArray;
+    NSArray *controllerNameArray;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"\ntestString==%@\ntestInteger==%ld\ntestFloat==%f\ntestDouble==%f\ntestBool==%d\ntestArray==%@\n",self.testString,self.testInteger,self.testFloat,self.testDouble,self.testBool,self.testArray);
-    
-    
-    
-	titleArray = @[@"ZYWebViewController",@"ZYFaceIDcontroller",@"ZYSystemShare"];
-	controllerNameArray = @[@"ZYWebViewController",@"ZYFaceViewController",@"ZYSystemShareController"];
-	self.tableView.tableFooterView = [UIView new];
-	self.tableView.rowHeight = 100;
+    titleArray = @[
+                   @"ZYWebViewController",
+                   @"ZYFaceIDcontroller",
+                   @"ZYSystemShare",
+                   @"TestController"
+                   ];
+    controllerNameArray = @[
+                            @"ZYWebViewController",
+                            @"ZYFaceViewController",
+                            @"ZYSystemShareController",
+                            @"ZYTestViewController"
+                            ];
+    self.tableView.tableFooterView = [UIView new];
+    self.tableView.rowHeight = 100;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-	
+    
 }
 
 #pragma mark - Table view data source
@@ -47,13 +53,13 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"roottablecell" forIndexPath:indexPath];
-	cell.textLabel.text = titleArray[indexPath.row];
+    cell.textLabel.text = titleArray[indexPath.row];
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-	
-	UIViewController *controller = [[NSClassFromString(controllerNameArray[indexPath.row]) alloc]init];
-	[self.navigationController pushViewController:controller animated:YES];
+    
+    UIViewController *controller = [[NSClassFromString(controllerNameArray[indexPath.row]) alloc]init];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 

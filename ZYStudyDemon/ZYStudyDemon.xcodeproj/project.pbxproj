@@ -30,6 +30,9 @@
 		58BE27D695597F04097FB498 /* Pods_ZYStudyDemonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FAA839E3FFCAB4A0FC2A4D /* Pods_ZYStudyDemonTests.framework */; };
 		AF2E58B11B28B86F3BBF411D /* Pods_ZYStudyDemonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE1D35731C38093EF367F5B /* Pods_ZYStudyDemonUITests.framework */; };
 		DE0F1E8FD8DF2B3688120B96 /* Pods_ZYStudyDemon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0092C2FB629CD8C60400D7F4 /* Pods_ZYStudyDemon.framework */; };
+		EE94F6782213BC9C00B06E43 /* UIView+ZYView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE94F6772213BC9C00B06E43 /* UIView+ZYView.m */; };
+		EE94F67C2213C12000B06E43 /* ZYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE94F67A2213C12000B06E43 /* ZYTestViewController.m */; };
+		EE94F67D2213C12000B06E43 /* ZYTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE94F67B2213C12000B06E43 /* ZYTestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +94,11 @@
 		78BC314136C3D11451242A6D /* Pods-ZYStudyDemonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYStudyDemonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYStudyDemonTests/Pods-ZYStudyDemonTests.release.xcconfig"; sourceTree = "<group>"; };
 		905BC63F5DBB407D9F1B414B /* Pods-ZYStudyDemonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYStudyDemonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYStudyDemonUITests/Pods-ZYStudyDemonUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BADAB5C2ECB5A26521733C19 /* Pods-ZYStudyDemonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYStudyDemonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYStudyDemonTests/Pods-ZYStudyDemonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE94F6762213BC9C00B06E43 /* UIView+ZYView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ZYView.h"; sourceTree = "<group>"; };
+		EE94F6772213BC9C00B06E43 /* UIView+ZYView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZYView.m"; sourceTree = "<group>"; };
+		EE94F6792213C12000B06E43 /* ZYTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYTestViewController.h; sourceTree = "<group>"; };
+		EE94F67A2213C12000B06E43 /* ZYTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYTestViewController.m; sourceTree = "<group>"; };
+		EE94F67B2213C12000B06E43 /* ZYTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZYTestViewController.xib; sourceTree = "<group>"; };
 		FC73BF0996AE8B368AFA1FB7 /* Pods-ZYStudyDemon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYStudyDemon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYStudyDemon/Pods-ZYStudyDemon.debug.xcconfig"; sourceTree = "<group>"; };
 		FCE8C13579D3BFD0FCD28A47 /* Pods-ZYStudyDemon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYStudyDemon.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYStudyDemon/Pods-ZYStudyDemon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,6 +177,7 @@
 				1F44D32620E47B70007EB825 /* ZYTableController.m */,
 				1FA76DEF21D5C9BD00515ECA /* ZYBaseViewController.h */,
 				1FA76DF021D5C9BD00515ECA /* ZYBaseViewController.m */,
+				EE94F6752213BC6300B06E43 /* Catogry */,
 				1FA76DF221D5F3FC00515ECA /* 定位 */,
 				1FA76DE921D5BA0F00515ECA /* WebViewTest */,
 				1FA76DE821D5B55500515ECA /* 非常用功能 */,
@@ -211,6 +220,9 @@
 				1F21233420E4D91E003CD11D /* ZYSystemShareController.xib */,
 				1FBEBDC620E9CF7F00EA9AC2 /* ZYActivity.h */,
 				1FBEBDC720E9CF7F00EA9AC2 /* ZYActivity.m */,
+				EE94F6792213C12000B06E43 /* ZYTestViewController.h */,
+				EE94F67A2213C12000B06E43 /* ZYTestViewController.m */,
+				EE94F67B2213C12000B06E43 /* ZYTestViewController.xib */,
 			);
 			path = "非常用功能";
 			sourceTree = "<group>";
@@ -243,6 +255,15 @@
 				5DE1D35731C38093EF367F5B /* Pods_ZYStudyDemonUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE94F6752213BC6300B06E43 /* Catogry */ = {
+			isa = PBXGroup;
+			children = (
+				EE94F6762213BC9C00B06E43 /* UIView+ZYView.h */,
+				EE94F6772213BC9C00B06E43 /* UIView+ZYView.m */,
+			);
+			path = Catogry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,6 +385,7 @@
 				1F44D30020E47AA8007EB825 /* LaunchScreen.storyboard in Resources */,
 				1F44D32C20E48751007EB825 /* ZYFaceViewController.xib in Resources */,
 				1F44D2FD20E47AA8007EB825 /* Assets.xcassets in Resources */,
+				EE94F67D2213C12000B06E43 /* ZYTestViewController.xib in Resources */,
 				1FA76DEE21D5BA4A00515ECA /* ZYWebViewController.xib in Resources */,
 				1F21233620E4D91E003CD11D /* ZYSystemShareController.xib in Resources */,
 				1FA76E0121D6222100515ECA /* SettingLocation.gpx in Resources */,
@@ -480,7 +502,9 @@
 				1F21233520E4D91E003CD11D /* ZYSystemShareController.m in Sources */,
 				1F44D2F220E47AA4007EB825 /* AppDelegate.m in Sources */,
 				1FBEBDC820E9CF7F00EA9AC2 /* ZYActivity.m in Sources */,
+				EE94F6782213BC9C00B06E43 /* UIView+ZYView.m in Sources */,
 				1FA76DFD21D5F74500515ECA /* ZYLocationManager.m in Sources */,
+				EE94F67C2213C12000B06E43 /* ZYTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,7 +678,7 @@
 				DEVELOPMENT_TEAM = LH28XA7T22;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				INFOPLIST_FILE = ZYStudyDemon/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -675,7 +699,7 @@
 				DEVELOPMENT_TEAM = LH28XA7T22;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				INFOPLIST_FILE = ZYStudyDemon/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

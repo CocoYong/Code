@@ -17,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	// Override point for customization after application launch.
+    
+    NSString *testString = [NSString stringWithFormat:@"消息推送_%@",[NSNull null]];
+    NSLog(@"haa===%@",testString);
 	return YES;
 }
 
