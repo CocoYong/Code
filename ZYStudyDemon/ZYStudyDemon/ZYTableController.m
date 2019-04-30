@@ -9,6 +9,7 @@
 #import "ZYTableController.h"
 
 @interface ZYTableController ()
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -18,49 +19,54 @@
     NSArray *controllerNameArray;
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+
     titleArray = @[
-                   @"ZYWebViewController",
-                   @"ZYFaceIDcontroller",
-                   @"ZYSystemShare",
-                   @"TestController"
-                   ];
+        @"ZYWebViewController",
+        @"ZYFaceIDcontroller",
+        @"ZYSystemShare",
+        @"TestController"
+    ];
     controllerNameArray = @[
-                            @"ZYWebViewController",
-                            @"ZYFaceViewController",
-                            @"ZYSystemShareController",
-                            @"ZYTestViewController"
-                            ];
+        @"ZYWebViewController",
+        @"ZYFaceViewController",
+        @"ZYSystemShareController",
+        @"ZYTestViewController"
+    ];
     self.tableView.tableFooterView = [UIView new];
     self.tableView.rowHeight = 100;
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     return titleArray.count;
 }
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"roottablecell" forIndexPath:indexPath];
     cell.textLabel.text = titleArray[indexPath.row];
     return cell;
 }
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
+{
     UIViewController *controller = [[NSClassFromString(controllerNameArray[indexPath.row]) alloc]init];
     [self.navigationController pushViewController:controller animated:YES];
 }
-
 
 @end

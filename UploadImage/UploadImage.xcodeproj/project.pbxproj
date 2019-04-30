@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EEEFCE07221FE955008C2125 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEFCE06221FE955008C2125 /* AppDelegate.m */; };
+		EEEFCE0A221FE955008C2125 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEFCE09221FE955008C2125 /* ViewController.m */; };
+		EEEFCE0C221FE958008C2125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEEFCE0B221FE958008C2125 /* Assets.xcassets */; };
+		EEEFCE0F221FE958008C2125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEEFCE0D221FE958008C2125 /* Main.storyboard */; };
+		EEEFCE12221FE958008C2125 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEFCE11221FE958008C2125 /* main.m */; };
+		EEEFCE1D221FE958008C2125 /* UploadImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEFCE1C221FE958008C2125 /* UploadImageTests.m */; };
+		EEEFCE28221FE958008C2125 /* UploadImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEFCE27221FE958008C2125 /* UploadImageUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EEEFCE19221FE958008C2125 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEEFCDFA221FE955008C2125 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEEFCE01221FE955008C2125;
+			remoteInfo = UploadImage;
+		};
+		EEEFCE24221FE958008C2125 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEEFCDFA221FE955008C2125 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEEFCE01221FE955008C2125;
+			remoteInfo = UploadImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EEEFCE02221FE955008C2125 /* UploadImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UploadImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEEFCE05221FE955008C2125 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EEEFCE06221FE955008C2125 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EEEFCE08221FE955008C2125 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EEEFCE09221FE955008C2125 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EEEFCE0B221FE958008C2125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEEFCE0E221FE958008C2125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEEFCE10221FE958008C2125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEEFCE11221FE958008C2125 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EEEFCE13221FE958008C2125 /* UploadImage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UploadImage.entitlements; sourceTree = "<group>"; };
+		EEEFCE18221FE958008C2125 /* UploadImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UploadImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEEFCE1C221FE958008C2125 /* UploadImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadImageTests.m; sourceTree = "<group>"; };
+		EEEFCE1E221FE958008C2125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEEFCE23221FE958008C2125 /* UploadImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UploadImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEEFCE27221FE958008C2125 /* UploadImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadImageUITests.m; sourceTree = "<group>"; };
+		EEEFCE29221FE958008C2125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEEFCDFF221FE955008C2125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEEFCE15221FE958008C2125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEEFCE20221FE958008C2125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EEEFCDF9221FE955008C2125 = {
+			isa = PBXGroup;
+			children = (
+				EEEFCE04221FE955008C2125 /* UploadImage */,
+				EEEFCE1B221FE958008C2125 /* UploadImageTests */,
+				EEEFCE26221FE958008C2125 /* UploadImageUITests */,
+				EEEFCE03221FE955008C2125 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EEEFCE03221FE955008C2125 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEEFCE02221FE955008C2125 /* UploadImage.app */,
+				EEEFCE18221FE958008C2125 /* UploadImageTests.xctest */,
+				EEEFCE23221FE958008C2125 /* UploadImageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEEFCE04221FE955008C2125 /* UploadImage */ = {
+			isa = PBXGroup;
+			children = (
+				EEEFCE05221FE955008C2125 /* AppDelegate.h */,
+				EEEFCE06221FE955008C2125 /* AppDelegate.m */,
+				EEEFCE08221FE955008C2125 /* ViewController.h */,
+				EEEFCE09221FE955008C2125 /* ViewController.m */,
+				EEEFCE0B221FE958008C2125 /* Assets.xcassets */,
+				EEEFCE0D221FE958008C2125 /* Main.storyboard */,
+				EEEFCE10221FE958008C2125 /* Info.plist */,
+				EEEFCE11221FE958008C2125 /* main.m */,
+				EEEFCE13221FE958008C2125 /* UploadImage.entitlements */,
+			);
+			path = UploadImage;
+			sourceTree = "<group>";
+		};
+		EEEFCE1B221FE958008C2125 /* UploadImageTests */ = {
+			isa = PBXGroup;
+			children = (
+				EEEFCE1C221FE958008C2125 /* UploadImageTests.m */,
+				EEEFCE1E221FE958008C2125 /* Info.plist */,
+			);
+			path = UploadImageTests;
+			sourceTree = "<group>";
+		};
+		EEEFCE26221FE958008C2125 /* UploadImageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EEEFCE27221FE958008C2125 /* UploadImageUITests.m */,
+				EEEFCE29221FE958008C2125 /* Info.plist */,
+			);
+			path = UploadImageUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEEFCE01221FE955008C2125 /* UploadImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEEFCE2C221FE958008C2125 /* Build configuration list for PBXNativeTarget "UploadImage" */;
+			buildPhases = (
+				EEEFCDFE221FE955008C2125 /* Sources */,
+				EEEFCDFF221FE955008C2125 /* Frameworks */,
+				EEEFCE00221FE955008C2125 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UploadImage;
+			productName = UploadImage;
+			productReference = EEEFCE02221FE955008C2125 /* UploadImage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EEEFCE17221FE958008C2125 /* UploadImageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEEFCE2F221FE958008C2125 /* Build configuration list for PBXNativeTarget "UploadImageTests" */;
+			buildPhases = (
+				EEEFCE14221FE958008C2125 /* Sources */,
+				EEEFCE15221FE958008C2125 /* Frameworks */,
+				EEEFCE16221FE958008C2125 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEEFCE1A221FE958008C2125 /* PBXTargetDependency */,
+			);
+			name = UploadImageTests;
+			productName = UploadImageTests;
+			productReference = EEEFCE18221FE958008C2125 /* UploadImageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EEEFCE22221FE958008C2125 /* UploadImageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEEFCE32221FE958008C2125 /* Build configuration list for PBXNativeTarget "UploadImageUITests" */;
+			buildPhases = (
+				EEEFCE1F221FE958008C2125 /* Sources */,
+				EEEFCE20221FE958008C2125 /* Frameworks */,
+				EEEFCE21221FE958008C2125 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEEFCE25221FE958008C2125 /* PBXTargetDependency */,
+			);
+			name = UploadImageUITests;
+			productName = UploadImageUITests;
+			productReference = EEEFCE23221FE958008C2125 /* UploadImageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEEFCDFA221FE955008C2125 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = yong;
+				TargetAttributes = {
+					EEEFCE01221FE955008C2125 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					EEEFCE17221FE958008C2125 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EEEFCE01221FE955008C2125;
+					};
+					EEEFCE22221FE958008C2125 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EEEFCE01221FE955008C2125;
+					};
+				};
+			};
+			buildConfigurationList = EEEFCDFD221FE955008C2125 /* Build configuration list for PBXProject "UploadImage" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEEFCDF9221FE955008C2125;
+			productRefGroup = EEEFCE03221FE955008C2125 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEEFCE01221FE955008C2125 /* UploadImage */,
+				EEEFCE17221FE958008C2125 /* UploadImageTests */,
+				EEEFCE22221FE958008C2125 /* UploadImageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEEFCE00221FE955008C2125 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEEFCE0C221FE958008C2125 /* Assets.xcassets in Resources */,
+				EEEFCE0F221FE958008C2125 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEEFCE16221FE958008C2125 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEEFCE21221FE958008C2125 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEEFCDFE221FE955008C2125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEEFCE0A221FE955008C2125 /* ViewController.m in Sources */,
+				EEEFCE12221FE958008C2125 /* main.m in Sources */,
+				EEEFCE07221FE955008C2125 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEEFCE14221FE958008C2125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEEFCE1D221FE958008C2125 /* UploadImageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEEFCE1F221FE958008C2125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEEFCE28221FE958008C2125 /* UploadImageUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EEEFCE1A221FE958008C2125 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEEFCE01221FE955008C2125 /* UploadImage */;
+			targetProxy = EEEFCE19221FE958008C2125 /* PBXContainerItemProxy */;
+		};
+		EEEFCE25221FE958008C2125 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEEFCE01221FE955008C2125 /* UploadImage */;
+			targetProxy = EEEFCE24221FE958008C2125 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EEEFCE0D221FE958008C2125 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEEFCE0E221FE958008C2125 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EEEFCE2A221FE958008C2125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EEEFCE2B221FE958008C2125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EEEFCE2D221FE958008C2125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UploadImage/UploadImage.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LH28XA7T22;
+				INFOPLIST_FILE = UploadImage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yong.UploadImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EEEFCE2E221FE958008C2125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UploadImage/UploadImage.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LH28XA7T22;
+				INFOPLIST_FILE = UploadImage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yong.UploadImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EEEFCE30221FE958008C2125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LH28XA7T22;
+				INFOPLIST_FILE = UploadImageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yong.UploadImageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UploadImage.app/Contents/MacOS/UploadImage";
+			};
+			name = Debug;
+		};
+		EEEFCE31221FE958008C2125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LH28XA7T22;
+				INFOPLIST_FILE = UploadImageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yong.UploadImageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UploadImage.app/Contents/MacOS/UploadImage";
+			};
+			name = Release;
+		};
+		EEEFCE33221FE958008C2125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LH28XA7T22;
+				INFOPLIST_FILE = UploadImageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yong.UploadImageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = UploadImage;
+			};
+			name = Debug;
+		};
+		EEEFCE34221FE958008C2125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LH28XA7T22;
+				INFOPLIST_FILE = UploadImageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yong.UploadImageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = UploadImage;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEEFCDFD221FE955008C2125 /* Build configuration list for PBXProject "UploadImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEEFCE2A221FE958008C2125 /* Debug */,
+				EEEFCE2B221FE958008C2125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEEFCE2C221FE958008C2125 /* Build configuration list for PBXNativeTarget "UploadImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEEFCE2D221FE958008C2125 /* Debug */,
+				EEEFCE2E221FE958008C2125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEEFCE2F221FE958008C2125 /* Build configuration list for PBXNativeTarget "UploadImageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEEFCE30221FE958008C2125 /* Debug */,
+				EEEFCE31221FE958008C2125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEEFCE32221FE958008C2125 /* Build configuration list for PBXNativeTarget "UploadImageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEEFCE33221FE958008C2125 /* Debug */,
+				EEEFCE34221FE958008C2125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEEFCDFA221FE955008C2125 /* Project object */;
+}

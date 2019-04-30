@@ -25,7 +25,6 @@
 		1FA76DF121D5C9BD00515ECA /* ZYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA76DF021D5C9BD00515ECA /* ZYBaseViewController.m */; };
 		1FA76DF721D5F48600515ECA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA76DF621D5F48600515ECA /* CoreLocation.framework */; };
 		1FA76DFD21D5F74500515ECA /* ZYLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA76DFC21D5F74500515ECA /* ZYLocationManager.m */; };
-		1FA76E0121D6222100515ECA /* SettingLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 1FA76E0021D6222100515ECA /* SettingLocation.gpx */; };
 		1FBEBDC820E9CF7F00EA9AC2 /* ZYActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBEBDC720E9CF7F00EA9AC2 /* ZYActivity.m */; };
 		58BE27D695597F04097FB498 /* Pods_ZYStudyDemonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FAA839E3FFCAB4A0FC2A4D /* Pods_ZYStudyDemonTests.framework */; };
 		AF2E58B11B28B86F3BBF411D /* Pods_ZYStudyDemonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE1D35731C38093EF367F5B /* Pods_ZYStudyDemonUITests.framework */; };
@@ -33,6 +32,7 @@
 		EE94F6782213BC9C00B06E43 /* UIView+ZYView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE94F6772213BC9C00B06E43 /* UIView+ZYView.m */; };
 		EE94F67C2213C12000B06E43 /* ZYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE94F67A2213C12000B06E43 /* ZYTestViewController.m */; };
 		EE94F67D2213C12000B06E43 /* ZYTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE94F67B2213C12000B06E43 /* ZYTestViewController.xib */; };
+		EE9865122275489300FB738D /* TestLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = EE9865112275489300FB738D /* TestLocation.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +86,6 @@
 		1FA76DF621D5F48600515ECA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1FA76DFB21D5F74500515ECA /* ZYLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYLocationManager.h; sourceTree = "<group>"; };
 		1FA76DFC21D5F74500515ECA /* ZYLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYLocationManager.m; sourceTree = "<group>"; };
-		1FA76E0021D6222100515ECA /* SettingLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SettingLocation.gpx; sourceTree = "<group>"; };
 		1FBEBDC620E9CF7F00EA9AC2 /* ZYActivity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYActivity.h; sourceTree = "<group>"; };
 		1FBEBDC720E9CF7F00EA9AC2 /* ZYActivity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYActivity.m; sourceTree = "<group>"; };
 		44FAA839E3FFCAB4A0FC2A4D /* Pods_ZYStudyDemonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYStudyDemonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +98,7 @@
 		EE94F6792213C12000B06E43 /* ZYTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYTestViewController.h; sourceTree = "<group>"; };
 		EE94F67A2213C12000B06E43 /* ZYTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYTestViewController.m; sourceTree = "<group>"; };
 		EE94F67B2213C12000B06E43 /* ZYTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZYTestViewController.xib; sourceTree = "<group>"; };
+		EE9865112275489300FB738D /* TestLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TestLocation.gpx; sourceTree = "<group>"; };
 		FC73BF0996AE8B368AFA1FB7 /* Pods-ZYStudyDemon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYStudyDemon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYStudyDemon/Pods-ZYStudyDemon.debug.xcconfig"; sourceTree = "<group>"; };
 		FCE8C13579D3BFD0FCD28A47 /* Pods-ZYStudyDemon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYStudyDemon.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYStudyDemon/Pods-ZYStudyDemon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,7 +148,6 @@
 		1F44D2E420E47AA4007EB825 = {
 			isa = PBXGroup;
 			children = (
-				1FA76E0021D6222100515ECA /* SettingLocation.gpx */,
 				1F44D2EF20E47AA4007EB825 /* ZYStudyDemon */,
 				1F44D30B20E47AA9007EB825 /* ZYStudyDemonTests */,
 				1F44D31620E47AA9007EB825 /* ZYStudyDemonUITests */,
@@ -187,6 +186,7 @@
 				1F44D30120E47AA9007EB825 /* Info.plist */,
 				1F44D30220E47AA9007EB825 /* main.m */,
 				1F44D2F920E47AA4007EB825 /* ZYStudyDemon.xcdatamodeld */,
+				EE9865112275489300FB738D /* TestLocation.gpx */,
 			);
 			path = ZYStudyDemon;
 			sourceTree = "<group>";
@@ -388,7 +388,7 @@
 				EE94F67D2213C12000B06E43 /* ZYTestViewController.xib in Resources */,
 				1FA76DEE21D5BA4A00515ECA /* ZYWebViewController.xib in Resources */,
 				1F21233620E4D91E003CD11D /* ZYSystemShareController.xib in Resources */,
-				1FA76E0121D6222100515ECA /* SettingLocation.gpx in Resources */,
+				EE9865122275489300FB738D /* TestLocation.gpx in Resources */,
 				1F44D2F820E47AA4007EB825 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -685,7 +685,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.suncar.ZYStudyDemon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Debug;
@@ -706,7 +706,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.suncar.ZYStudyDemon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Release;

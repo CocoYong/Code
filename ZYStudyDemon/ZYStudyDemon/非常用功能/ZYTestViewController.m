@@ -19,22 +19,15 @@
 
 @implementation ZYTestViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
-    
+
     self.testViewTwo.frame = CGRectMake(100, 300, 200, 200);
     [[UIApplication sharedApplication].keyWindow addSubview:self.testViewTwo];
-    
-    
-    
-    self.testView.frame =[UIScreen mainScreen].bounds;
+
+    self.testView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
     [self.navigationController.view addSubview:self.testView];
-    
-    
-    
-    
-  
 }
 
 /*

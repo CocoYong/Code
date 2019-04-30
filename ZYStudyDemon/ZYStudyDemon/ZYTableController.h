@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZYTableController : UITableViewController
+@interface ZYTableController : UIViewController
 @property (nonatomic, copy) NSString *testString;
 @property (nonatomic, assign) NSInteger testInteger;
-@property (nonatomic, assign) CGFloat  testFloat;
-@property (nonatomic, assign) double  testDouble;
+@property (nonatomic, assign) CGFloat testFloat;
+@property (nonatomic, assign) double testDouble;
 @property (nonatomic, assign) BOOL testBool;
-@property(nonatomic, strong)  NSArray *testArray;
+@property (nonatomic, strong)  NSArray *testArray;
 
 @end

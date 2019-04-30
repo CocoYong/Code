@@ -14,9 +14,9 @@
 
 @implementation ZYBaseViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-	
 }
 
 @end

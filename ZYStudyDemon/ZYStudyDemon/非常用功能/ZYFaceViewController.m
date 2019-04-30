@@ -18,31 +18,31 @@
 
 @implementation ZYFaceViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-	
-	LAContext *myContext = [[LAContext alloc] init];
-	NSError *authError = nil;
-	NSString *myLocalizedReasonString = @"请输入用户ID";
-	
-	if ([myContext canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&authError]) {
-		[myContext evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
-				  localizedReason:myLocalizedReasonString
-							reply:^(BOOL success, NSError *error) {   
-								if (success) {
-									// User authenticated successfully, take appropriate action
-								} else {
-									// User did not authenticate successfully, look at error and take appropriate action
-								}
-							}];
-	} else {
-		// Could not evaluate policy; look at authError and present an appropriate message to user
-	}
-	
-	
+
+    LAContext *myContext = [[LAContext alloc] init];
+    NSError *authError = nil;
+    NSString *myLocalizedReasonString = @"请输入用户ID";
+
+    if ([myContext canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&authError]) {
+        [myContext evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
+                  localizedReason:myLocalizedReasonString
+                            reply:^(BOOL success, NSError *error) {
+            if (success) {
+                // User authenticated successfully, take appropriate action
+            } else {
+                // User did not authenticate successfully, look at error and take appropriate action
+            }
+        }];
+    } else {
+        // Could not evaluate policy; look at authError and present an appropriate message to user
+    }
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

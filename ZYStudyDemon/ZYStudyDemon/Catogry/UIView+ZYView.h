@@ -17,8 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param controller 弹窗的控制器
  */
--(void)popUpInController:(UIViewController*)controller;
-
+- (void)popUpInController:(UIViewController *)controller;
 
 /**
  view设置圆角边框颜色和宽度
@@ -27,10 +26,9 @@ NS_ASSUME_NONNULL_BEGIN
  @param width 边框宽度
  @param radius 圆角半径
  */
--(void)changeBorderColor:(UIColor*)color
-             borderWidth:(CGFloat)width
-            cornerRadius:(CGFloat)radius;
-
+- (void)changeBorderColor:(UIColor *)color
+              borderWidth:(CGFloat)width
+             cornerRadius:(CGFloat)radius;
 
 /**
  设置view的阴影(特别注意:调用本方法 如果view有子视图 view的layer的masksToBounds属性不能设置为YES)
@@ -40,17 +38,10 @@ NS_ASSUME_NONNULL_BEGIN
  @param offset 阴影偏移
  @param opacity 阴影透明度
  */
--(void)addShadowWith:(UIColor*)shadowColor
-        shadowRadius:(CGFloat)radius
-        shadowOffset:(CGSize)offset
-       shadowOpacity:(CGFloat)opacity;
-
-
-
-
-
-
+- (void)addShadowWith:(UIColor *)shadowColor
+         shadowRadius:(CGFloat)radius
+         shadowOffset:(CGSize)offset
+        shadowOpacity:(CGFloat)opacity;
 
 @end
 NS_ASSUME_NONNULL_END
-

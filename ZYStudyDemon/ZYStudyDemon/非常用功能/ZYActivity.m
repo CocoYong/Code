@@ -11,22 +11,26 @@
 @implementation ZYActivity
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems
 {
-	return  YES;
+    return YES;
 }
+
 - (void)prepareWithActivityItems:(NSArray *)activityItems
 {
-	
 }
 
 - (nullable UIActivityType)activityType
 {
-	return UIActivityTypePostToFacebook;
+    return UIActivityTypePostToFacebook;
 }
-- (nullable NSString *)activityTitle{
-	return @"哈哈哈哈哈 测试啦";
+
+- (nullable NSString *)activityTitle
+{
+    return @"哈哈哈哈哈 测试啦";
 }
+
 - (nullable UIImage *)activityImage
 {
-	return [UIImage imageNamed:@"head_bg"];
+    return [UIImage imageNamed:@"head_bg"];
 }
+
 @end
