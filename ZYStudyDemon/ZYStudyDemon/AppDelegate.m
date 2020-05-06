@@ -16,19 +16,40 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-
-    NSString *testString = [NSString stringWithFormat:@"消息推送_%@", [NSNull null]];
-    NSLog(@"haa===%@", testString);
-
-    NSArray *arryOne = @[@"hhhhh", @"hhhhh", @"hhhldfjslfj"];
-
-    NSMutableArray *array = [NSMutableArray array];
-    [array addObjectsFromArray:arryOne];
-
-    NSLog(@"array===%@ count", array);
-
+    
+    [self registerRemoteNotification];
+    // 通过这个方法设置badge的时候必须先通过[self registerRemoteNotification];注册通知
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+    
+    
+    
+    
+    NSLog(@"================%@",NSStringFromSelector(_cmd)); //获取方法名
+    
+    
+    //数组去重
+    //方法一
+    NSArray * testArray = @[@"1231",@"1234",@"12556",@"12786",@"12324",@"1299",@"1278",@"1231",@"1289",@"12"];
+    NSInteger sum = [[testArray valueForKeyPath:@"@max.self"] integerValue];
+    NSLog(@"%ld", sum);
+    
+    
+    
     return YES;
+}
+
+- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings
+{
+    [application registerForRemoteNotifications];
+}
+
+//注册通知类型
+- (void)registerRemoteNotification
+{
+    UIUserNotificationType types = (UIUserNotificationTypeAlert | UIUserNotificationTypeSound | UIUserNotificationTypeBadge);
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:types categories:nil];
+    [[UIApplication sharedApplication] registerForRemoteNotifications];
+    [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

@@ -14,27 +14,68 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - IQKeyboardManager (6.2.1)
   - Masonry (1.1.0)
-  - SDWebImage (4.4.2):
-    - SDWebImage/Core (= 4.4.2)
-  - SDWebImage/Core (4.4.2)
+  - MJExtension (3.0.17)
+  - MJRefresh (3.1.16)
+  - OHHTTPStubs (8.0.0):
+    - OHHTTPStubs/Default (= 8.0.0)
+  - OHHTTPStubs/Core (8.0.0)
+  - OHHTTPStubs/Default (8.0.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (8.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (8.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (8.0.0)
+  - ReactiveObjC (3.1.1)
+  - SDWebImage (4.4.6):
+    - SDWebImage/Core (= 4.4.6)
+  - SDWebImage/Core (4.4.6)
+  - YYModel (1.0.4)
+  - YYText (1.0.7)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
+  - IQKeyboardManager
   - Masonry (~> 1.1.0)
+  - MJExtension
+  - MJRefresh
+  - OHHTTPStubs (~> 8.0.0)
+  - ReactiveObjC (~> 3.1.1)
   - SDWebImage (~> 4.4.2)
+  - YYModel (~> 1.0.4)
+  - YYText
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - AFNetworking
+    - IQKeyboardManager
     - Masonry
+    - MJExtension
+    - MJRefresh
+    - ReactiveObjC
     - SDWebImage
+    - YYModel
+    - YYText
+  trunk:
+    - OHHTTPStubs
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  IQKeyboardManager: 964638372b4a61892cc74fdfa6fd26de8c9464a2
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
+  MJRefresh: 7798e16e53a5ef7f332dd05b27664db4e29530fd
+  OHHTTPStubs: 9cbce6364bec557cc3439aa6bb7514670d780881
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: beed51e05b1b1bc4df537de59f5b6e60ff96003a
+PODFILE CHECKSUM: bb7b7af262a48c18a8aa6eeef43f71842abd26e0
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4

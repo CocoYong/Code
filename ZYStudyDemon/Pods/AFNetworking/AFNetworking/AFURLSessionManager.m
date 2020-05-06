@@ -359,12 +359,14 @@ static NSString * const AFNSURLSessionTaskDidSuspendNotification = @"com.alamofi
          Here is what we know:
             - NSURLSessionTasks are implemented with class clusters, meaning the class you request from the API isn't actually the type of class you will get back.
             - Simply referencing `[NSURLSessionTask class]` will not work. You need to ask an `NSURLSession` to actually create an object, and grab the class from there.
+            - ios 7中`localDataTask` 是一个 `__NSCFLocalDataTask`对象，它继承自`__NSCFLocalSessionTask`，`__NSCFLocalSessionTask`继承自`__NSCFURLSessionTask`；
             - On iOS 7, `localDataTask` is a `__NSCFLocalDataTask`, which inherits from `__NSCFLocalSessionTask`, which inherits from `__NSCFURLSessionTask`.
+            - ios8中 中`localDataTask` 是一个 `__NSCFLocalDataTask`对象，它继承自`__NSCFLocalSessionTask`，`__NSCFLocalSessionTask`继承自`NSURLSessionTask`；
             - On iOS 8, `localDataTask` is a `__NSCFLocalDataTask`, which inherits from `__NSCFLocalSessionTask`, which inherits from `NSURLSessionTask`.
-            - On iOS 7, `__NSCFLocalSessionTask` and `__NSCFURLSessionTask` are the only two classes that have their own implementations of `resume` and `suspend`, and `__NSCFLocalSessionTask` DOES NOT CALL SUPER. This means both classes need to be swizzled.
-            - On iOS 8, `NSURLSessionTask` is the only class that implements `resume` and `suspend`. This means this is the only class that needs to be swizzled.
-            - Because `NSURLSessionTask` is not involved in the class hierarchy for every version of iOS, its easier to add the swizzled methods to a dummy class and manage them there.
-        
+            - On iOS 7, `__NSCFLocalSessionTask` and `__NSCFURLSessionTask` are the only two classes that have their own implementations of `resume` and `suspend`, and `__NSCFLocalSessionTask` DOES NOT CALL SUPER. This means both classes need to be swizzled. IOS7中`__NSCFLocalSessionTask` and `__NSCFURLSessionTask`是唯一的一对实现了 `resume` and `suspend`方法的类，并且`__NSCFLocalSessionTask`不调用super方法，这意味这两个方法都需要需要转换方法。
+            - On iOS 8, `NSURLSessionTask` is the only class that implements `resume` and `suspend`. This means this is the only class that needs to be swizzled.在IOS8中`NSURLSessionTask`是唯一一个实现了`resume` and `suspend`方法的类，这意味着只有这一个类需要交换方法实现。
+            - Because `NSURLSessionTask` is not involved in the class hierarchy for every version of iOS, its easier to add the swizzled methods to a dummy class and manage them there.因为`NSURLSessionTask`在任何不同版本的IOS中类的继承树中都不会被调用，所以在这个类中添加或者交换方法很好。
+         
          Some Assumptions:
             - No implementations of `resume` or `suspend` call super. If this were to change in a future version of iOS, we'd need to handle it.
             - No background task classes override `resume` or `suspend`
@@ -642,7 +644,7 @@ static NSString * const AFNSURLSessionTaskDidSuspendNotification = @"com.alamofi
 }
 
 #pragma mark -
-
+//从回调block中获取想要的任务数组的方法。
 - (NSArray *)tasksForKeyPath:(NSString *)keyPath {
     __block NSArray *tasks = nil;
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
