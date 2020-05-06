@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[ZYModelTransitionController dismissSelf]:ZYModelTransitionController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ZYBlackMagicController viewDidLoad]:ZYBlackMagicController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ZYBlackMagicController viewWillAppear:]:ZYBlackMagicController.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
