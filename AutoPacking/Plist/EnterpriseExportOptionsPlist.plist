@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>manifest</key>
+	<dict>
+		<key>fullSizeImageURL</key>
+		<string>https://ybwp-download.djbx.com/ybwp/ios/icon_512.png</string>
+		<key>displayImageURL</key>
+		<string>https://ybwp-download.djbx.com/ybwp/ios/icon_57.png</string>
+		<key>appURL</key>
+		<string>https://ybwp-download.djbx.com/ybwp/ios/ybwp.ipa</string>
+	</dict>
+	<key>compileBitcode</key>
+	<false/>
+	<key>destination</key>
+	<string>export</string>
+	<key>method</key>
+	<string>enterprise</string>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>com.app.suna</key>
+		<string>suna_dist</string>
+	</dict>
+	<key>signingCertificate</key>
+	<string>Apple Distribution</string>
+	<key>signingStyle</key>
+	<string>manual</string>
+	<key>stripSwiftSymbols</key>
+	<true/>
+	<key>teamID</key>
+	<string>LH28XA7T22</string>
+	<key>thinning</key>
+	<string>&lt;none&gt;</string>
+</dict>
+</plist>

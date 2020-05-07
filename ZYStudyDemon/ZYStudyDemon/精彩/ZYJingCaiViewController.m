@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    NSCalendar *calender = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierChinese];
+    NSLog(@"range of day %@",NSStringFromRange([calender rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:[NSDate date]]));
+     NSLog(@"number of day %ld",[calender ordinalityOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:[NSDate date]]);
+    
 }
 
 /*

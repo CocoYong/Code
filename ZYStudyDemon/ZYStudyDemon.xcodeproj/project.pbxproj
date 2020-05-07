@@ -31,6 +31,8 @@
 		DE0F1E8FD8DF2B3688120B96 /* Pods_ZYStudyDemon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0092C2FB629CD8C60400D7F4 /* Pods_ZYStudyDemon.framework */; };
 		EE1C86742462BCB900213DB0 /* ZYCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1C86722462BCB900213DB0 /* ZYCollectionHeaderView.m */; };
 		EE1C86752462BCB900213DB0 /* ZYCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE1C86732462BCB900213DB0 /* ZYCollectionHeaderView.xib */; };
+		EE1C867924639E3600213DB0 /* ZYDateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1C867824639E3600213DB0 /* ZYDateModel.m */; };
+		EE1C867C24639EFC00213DB0 /* NSDate+ZYDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1C867B24639EFC00213DB0 /* NSDate+ZYDateHelper.m */; };
 		EE2511AC2462AE50004B65B9 /* ZYCalenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2511AB2462AE50004B65B9 /* ZYCalenderView.m */; };
 		EE2511B02462B170004B65B9 /* ZYCalenderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2511AE2462B170004B65B9 /* ZYCalenderCell.m */; };
 		EE2511B12462B170004B65B9 /* ZYCalenderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE2511AF2462B170004B65B9 /* ZYCalenderCell.xib */; };
@@ -135,6 +137,10 @@
 		EE1C86712462BCB900213DB0 /* ZYCollectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCollectionHeaderView.h; sourceTree = "<group>"; };
 		EE1C86722462BCB900213DB0 /* ZYCollectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCollectionHeaderView.m; sourceTree = "<group>"; };
 		EE1C86732462BCB900213DB0 /* ZYCollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZYCollectionHeaderView.xib; sourceTree = "<group>"; };
+		EE1C867724639E3600213DB0 /* ZYDateModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYDateModel.h; sourceTree = "<group>"; };
+		EE1C867824639E3600213DB0 /* ZYDateModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYDateModel.m; sourceTree = "<group>"; };
+		EE1C867A24639EFC00213DB0 /* NSDate+ZYDateHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+ZYDateHelper.h"; sourceTree = "<group>"; };
+		EE1C867B24639EFC00213DB0 /* NSDate+ZYDateHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ZYDateHelper.m"; sourceTree = "<group>"; };
 		EE2511AA2462AE50004B65B9 /* ZYCalenderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCalenderView.h; sourceTree = "<group>"; };
 		EE2511AB2462AE50004B65B9 /* ZYCalenderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCalenderView.m; sourceTree = "<group>"; };
 		EE2511AD2462B170004B65B9 /* ZYCalenderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCalenderCell.h; sourceTree = "<group>"; };
@@ -285,6 +291,7 @@
 		1F44D2EF20E47AA4007EB825 /* ZYStudyDemon */ = {
 			isa = PBXGroup;
 			children = (
+				EE1C867624639DDE00213DB0 /* 日历 */,
 				EEFCD65F23FC019E00464E03 /* 精彩 */,
 				EEFCD65E23FC019600464E03 /* 直播 */,
 				EEFCD65D23FC018C00464E03 /* 我的 */,
@@ -367,6 +374,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EE1C867624639DDE00213DB0 /* 日历 */ = {
+			isa = PBXGroup;
+			children = (
+				EE2511AA2462AE50004B65B9 /* ZYCalenderView.h */,
+				EE2511AB2462AE50004B65B9 /* ZYCalenderView.m */,
+				EE1C867724639E3600213DB0 /* ZYDateModel.h */,
+				EE1C867824639E3600213DB0 /* ZYDateModel.m */,
+				EE1C86712462BCB900213DB0 /* ZYCollectionHeaderView.h */,
+				EE1C86722462BCB900213DB0 /* ZYCollectionHeaderView.m */,
+				EE1C86732462BCB900213DB0 /* ZYCollectionHeaderView.xib */,
+				EE2511AD2462B170004B65B9 /* ZYCalenderCell.h */,
+				EE2511AE2462B170004B65B9 /* ZYCalenderCell.m */,
+				EE2511AF2462B170004B65B9 /* ZYCalenderCell.xib */,
+				EE1C867A24639EFC00213DB0 /* NSDate+ZYDateHelper.h */,
+				EE1C867B24639EFC00213DB0 /* NSDate+ZYDateHelper.m */,
+			);
+			path = "日历";
+			sourceTree = "<group>";
+		};
 		EE94F6752213BC6300B06E43 /* Catogry */ = {
 			isa = PBXGroup;
 			children = (
@@ -445,14 +471,6 @@
 			children = (
 				EEFCD66023FC01D200464E03 /* ZYMineViewController.h */,
 				EEFCD66123FC01D200464E03 /* ZYMineViewController.m */,
-				EE2511AA2462AE50004B65B9 /* ZYCalenderView.h */,
-				EE2511AB2462AE50004B65B9 /* ZYCalenderView.m */,
-				EE1C86712462BCB900213DB0 /* ZYCollectionHeaderView.h */,
-				EE1C86722462BCB900213DB0 /* ZYCollectionHeaderView.m */,
-				EE1C86732462BCB900213DB0 /* ZYCollectionHeaderView.xib */,
-				EE2511AD2462B170004B65B9 /* ZYCalenderCell.h */,
-				EE2511AE2462B170004B65B9 /* ZYCalenderCell.m */,
-				EE2511AF2462B170004B65B9 /* ZYCalenderCell.xib */,
 				EE8A505E2445B82D00816110 /* ZYTestViewController.h */,
 				EE8A505F2445B82D00816110 /* ZYTestViewController.m */,
 				EE8A50602445B82D00816110 /* ZYTestViewController.xib */,
@@ -731,6 +749,7 @@
 				EE9865152278627700FB738D /* YGActivityModel.m in Sources */,
 				EE69B0C422C4A9030025158A /* ZYTabBarRightTransition.m in Sources */,
 				1F44D2FB20E47AA4007EB825 /* ZYStudyDemon.xcdatamodeld in Sources */,
+				EE1C867924639E3600213DB0 /* ZYDateModel.m in Sources */,
 				EE2511AC2462AE50004B65B9 /* ZYCalenderView.m in Sources */,
 				EE69B0C722C4AC9C0025158A /* ZYTabBarLeftTransition.m in Sources */,
 				EE2511B02462B170004B65B9 /* ZYCalenderCell.m in Sources */,
@@ -746,6 +765,7 @@
 				EEBED13F23FE45150015B60F /* SLCombineView.m in Sources */,
 				EEAF96D922B32EE100B1AE18 /* ZYTransitionController.m in Sources */,
 				1FA76DED21D5BA4A00515ECA /* ZYWebViewController.m in Sources */,
+				EE1C867C24639EFC00213DB0 /* NSDate+ZYDateHelper.m in Sources */,
 				EEFCD66323FC01D200464E03 /* ZYMineViewController.m in Sources */,
 				1F44D30320E47AA9007EB825 /* main.m in Sources */,
 				EE69B0B822C469BF0025158A /* ZYDismissTransition.m in Sources */,
